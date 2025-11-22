@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/****************
+    SAREE
+*****************/
+.saree-wrapper {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.saree-img {
+  height: 350px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+  transition: width 0.6s ease, transform 0.6s ease, background-image 0.6s;
+}
+
+/****************
+   SECTIONS
+*****************/
+.section {
+  height: 100vh;
+  padding: 30px;
+  color: white;
+}
+
+.s1 { background: #12011a; }
+.s2 { background: #1e0533; }
+.s3 { background: #300a50; }
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}

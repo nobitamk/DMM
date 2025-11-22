@@ -26,9 +26,9 @@ const Videos = () => {
         <h2>Saree Opening Showcase</h2>
 
         <div className="video-slider">
-          <video src="/video2.mp4" autoPlay muted loop playsInline></video>
-          <video src="/video3.mp4" autoPlay muted loop playsInline></video>
-          <video src="/video4.mp4" autoPlay muted loop playsInline></video>
+          <video src="https://res.cloudinary.com/dubfi0v52/video/upload/v1763808961/video2_lrscrr.mp4" autoPlay muted loop playsInline></video>
+          <video src="https://res.cloudinary.com/dubfi0v52/video/upload/v1763809222/video4_dwsnwv.mp4" autoPlay muted loop playsInline></video>
+          <video src="https://res.cloudinary.com/dubfi0v52/video/upload/v1763809222/video4_dwsnwv.mp4" autoPlay muted loop playsInline></video>
         </div>
       </section>
     </>

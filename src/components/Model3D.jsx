@@ -105,7 +105,7 @@ const Model3D = () => {
         {/* RIGHT SIDE 3D MODEL */}
         <div className="model3d-viewer">
           <model-viewer
-            src="/saree.glb"
+            src="https://files.catbox.moe/khn3rr.glb"
             auto-rotate
             camera-controls
             exposure="1"

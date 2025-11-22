@@ -8,23 +8,27 @@ import Section3 from "./components/Section3";
 import Videos from "./components/Videos";
 import Model3D from "./components/Model3D";
 
-import Sarees from "./components/Sarees";
+import Sales from "./pages/Sales";
+import BestSellers from "./pages/BestSeller";     // corrected name
+import NewArrivals from "./pages/NewArrivals";
+import Sarees from "./pages/Sarees";
+import About from "./pages/About";                // ⭐ new About page
+
 import Wishlist from "./components/Wishlist";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 
-import Loader from "./components/Loader"; // ⭐ Add loader
+import Loader from "./components/Loader";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* ⭐ FULL SCREEN LOADER */}
+      {/* GLOBAL FULL SCREEN LOADER */}
       <Loader />
 
       <div
         style={{
           background: "#0d0d0d",
-          color: "#000",
           overflowX: "hidden",
           width: "100%",
           maxWidth: "100%",
@@ -32,11 +36,12 @@ function App() {
           padding: 0,
         }}
       >
-        {/* ⭐ HEADER ALWAYS VISIBLE */}
+        {/* HEADER ALWAYS VISIBLE */}
         <Header />
 
-        {/* ⭐ ROUTES */}
+        {/* ROUTES */}
         <Routes>
+          {/* HOME PAGE */}
           <Route
             path="/"
             element={
@@ -50,12 +55,21 @@ function App() {
             }
           />
 
+          {/* SHOP RELATED PAGES */}
+          <Route path="/sales" element={<Sales />} />
+          <Route path="/best-sellers" element={<BestSellers />} />
+          <Route path="/new-arrivals" element={<NewArrivals />} />
           <Route path="/sarees" element={<Sarees />} />
+
+          {/* INFORMATION PAGES */}
+          <Route path="/about" element={<About />} />
+
+          {/* SYSTEM PAGES */}
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
 
-        {/* ⭐ GLOBAL FOOTER */}
+        {/* GLOBAL FOOTER */}
         <Footer />
       </div>
     </BrowserRouter>

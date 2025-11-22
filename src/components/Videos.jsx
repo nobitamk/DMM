@@ -28,7 +28,7 @@ const Videos = () => {
         <div className="video-slider">
           <video src="https://res.cloudinary.com/dubfi0v52/video/upload/v1763808961/video2_lrscrr.mp4" autoPlay muted loop playsInline></video>
           <video src="https://res.cloudinary.com/dubfi0v52/video/upload/v1763809222/video4_dwsnwv.mp4" autoPlay muted loop playsInline></video>
-          <video src="https://res.cloudinary.com/dubfi0v52/video/upload/v1763809222/video4_dwsnwv.mp4" autoPlay muted loop playsInline></video>
+          <video src="https://res.cloudinary.com/dubfi0v52/video/upload/v1763809102/video3_dlohql.mp4" autoPlay muted loop playsInline></video>
         </div>
       </section>
     </>
